@@ -1,0 +1,28 @@
+{
+    "name": "Chrome Demo Ext",
+    "description": "10Pearls PoC",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "./images/10pearls.png",
+            "32": "./images/10pearls.png",
+            "48": "./images/10pearls.png",
+            "128": "./images/10pearls.png"
+        }
+    },
+    "icons": {
+        "16": "./images/10pearls.png",
+        "32": "./images/10pearls.png",
+        "48": "./images/10pearls.png",
+        "128": "./images/10pearls.png"
+    },
+    "permissions": ["storage", "activeTab", "scripting"],
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    }
+}
